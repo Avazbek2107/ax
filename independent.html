@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axborot Xavfsizligi | Mustaqil Ta'lim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-haltered"></i>
+                <span>AXBOROT XAVFSIZLIGI</span>
+            </div>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Resurslarni qidirish...">
+            </div>
+            <div class="nav-user">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="user-name">Foydalanuvchi</span>
+                </div>
+                <a href="dashboard.html" class="nav-btn">
+                    <i class="fas fa-home"></i>
+                </a>
+                <button class="nav-btn logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item">
+                    <i class="fas fa-home"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="lectures.html" class="menu-item">
+                    <i class="fas fa-book"></i>
+                    <span>Ma'ruzalar</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="practice.html" class="menu-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Amaliyot</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="independent.html" class="menu-item active">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mustaqil ta'lim</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="tests.html" class="menu-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Testlar</span>
+                    <span class="badge">10</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header" style="background: linear-gradient(135deg, #f59e0b, #d97706)">
+                <h1><i class="fas fa-user-graduate"></i> Mustaqil Ta'lim</h1>
+                <p>Qo'shimcha materiallar, tavsiyalar va foydali manbalar</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value">15</span>
+                        <span>Jami resurslar</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">3</span>
+                        <span>O'qilgan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">8</span>
+                        <span>Saqlangan</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-icon" style="background: #dbeafe; color: #2563eb">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>Kitoblar</h4>
+                    <span>5 ta</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon" style="background: #fee2e2; color: #dc2626">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h4>Videolar</h4>
+                    <span>4 ta</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon" style="background: #dcfce7; color: #16a34a">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h4>Maqolalar</h4>
+                    <span>6 ta</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon" style="background: #fef9c3; color: #ca8a04">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h4>Onlayn kurslar</h4>
+                    <span>3 ta</span>
+                </div>
+            </div>
+
+            <!-- Resources Grid -->
+            <div class="content-grid">
+                <!-- Resource 1 -->
+                <div class="content-card completed">
+                    <div class="bookmark-btn active">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?w=600" alt="Book">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type book">Kitob</span>
+                            <span class="card-duration">350 sahifa</span>
+                        </div>
+                        <h3>Axborot Xavfsizligi Asoslari</h3>
+                        <p>Zamonaviy axborot xavfsizligi tamoyillari va amaliyotlari haqida to'liq qo'llanma.</p>
+                        <div class="resource-author">
+                            <span>Muallif: John Smith</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-download"></i> Yuklab olish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="content-card completed">
+                    <div class="bookmark-btn active">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Video">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type video">Video</span>
+                            <span class="card-duration">8 soat</span>
+                        </div>
+                        <h3>Kiberxavfsizlikka Kirish</h3>
+                        <p>Boshlang'ichlar uchun to'liq video kurs. Tahdidlar, himoya usullari va amaliy maslahatlar.</p>
+                        <div class="resource-author">
+                            <span>O'qituvchi: Jane Doe</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play-circle"></i> Tomosha qilish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-download"></i> Materiallar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="content-card completed">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600" alt="Article">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type article">Maqola</span>
+                            <span class="card-duration">15 daqiqa</span>
+                        </div>
+                        <h3>Parol Xavfsizligi Bo'yicha Qo'llanma</h3>
+                        <p>Kuchli parollar yaratish, parol menejerlari va ikki bosqichli autentifikatsiya.</p>
+                        <div class="resource-author">
+                            <span>Security Magazine</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i> O'qish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="content-card in-progress">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600" alt="Course">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type course">Onlayn kurs</span>
+                            <span class="card-duration">6 soat</span>
+                        </div>
+                        <h3>Tarmoq Xavfsizligi Asoslari</h3>
+                        <p>Firewall, VPN, IDS/IPS tizimlari va tarmoq monitoringi bo'yicha amaliy kurs.</p>
+                        <div class="resource-author">
+                            <span>Platforma: Coursera</span>
+                        </div>
+                        <div class="card-progress">
+                            <span>60%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Davom etish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i> Ma'lumot
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 5 -->
+                <div class="content-card">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1620336655055-bd87c5d1d73f?w=600" alt="Book">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type book">Darslik</span>
+                            <span class="card-duration">420 sahifa</span>
+                        </div>
+                        <h3>Zamonaviy Kriptografiya</h3>
+                        <p>Simmetrik va asimmetrik shifrlash, raqamli imzolar va kriptografik protokollar.</p>
+                        <div class="resource-author">
+                            <span>Muallif: Dr. Alan Turing</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-download"></i> Yuklab olish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 6 -->
+                <div class="content-card">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=600" alt="Article">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type article">Tadqiqot</span>
+                            <span class="card-duration">25 daqiqa</span>
+                        </div>
+                        <h3>Zararli Dasturlarni Tahlil Qilish</h3>
+                        <p>Malware tahlili usullari, vositalari va himoya strategiyalari haqida ilmiy maqola.</p>
+                        <div class="resource-author">
+                            <span>Kiberxavfsizlik Instituti</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i> O'qish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 7 -->
+                <div class="content-card">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Course">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type course">Onlayn kurs</span>
+                            <span class="card-duration">10 soat</span>
+                        </div>
+                        <h3>Web Ilovalar Xavfsizligi</h3>
+                        <p>OWASP Top 10, SQL Injection, XSS va boshqa web zaifliklar haqida to'liq kurs.</p>
+                        <div class="resource-author">
+                            <span>Platforma: Udemy</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-link"></i> Saytga o'tish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i> Ma'lumot
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 8 -->
+                <div class="content-card">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?w=600" alt="Book">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type book">Kitob</span>
+                            <span class="card-duration">520 sahifa</span>
+                        </div>
+                        <h3>Penetratsion Testlash</h3>
+                        <p>Professional penetratsion testlash metodologiyalari va vositalari.</p>
+                        <div class="resource-author">
+                            <span>Muallif: Georgia Weidman</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-download"></i> Yuklab olish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with resources 9-15 -->
+                <div class="content-card">
+                    <div class="bookmark-btn">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600" alt="Course">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="resource-type course">Onlayn kurs</span>
+                            <span class="card-duration">8 soat</span>
+                        </div>
+                        <h3>Sertifikatlash Dasturlari</h3>
+                        <p>CISSP, CEH, Security+ va boshqa sertifikatlarga tayyorgarlik.</p>
+                        <div class="resource-author">
+                            <span>Platforma: LinkedIn Learning</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-link"></i> Saytga o'tish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-info-circle"></i> Ma'lumot
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled>❮ Oldingi</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn">Keyingi ❯</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

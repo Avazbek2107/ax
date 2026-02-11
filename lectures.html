@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axborot Xavfsizligi | Ma'ruzalar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-haltered"></i>
+                <span>AXBOROT XAVFSIZLIGI</span>
+            </div>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Ma'ruzalarni qidirish...">
+            </div>
+            <div class="nav-user">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="user-name">Foydalanuvchi</span>
+                </div>
+                <a href="dashboard.html" class="nav-btn">
+                    <i class="fas fa-home"></i>
+                </a>
+                <button class="nav-btn logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item">
+                    <i class="fas fa-home"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="lectures.html" class="menu-item active">
+                    <i class="fas fa-book"></i>
+                    <span>Ma'ruzalar</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="practice.html" class="menu-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Amaliyot</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="independent.html" class="menu-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mustaqil ta'lim</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="tests.html" class="menu-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Testlar</span>
+                    <span class="badge">10</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header" style="background: linear-gradient(135deg, #667eea, #764ba2)">
+                <h1><i class="fas fa-book"></i> Ma'ruzalar</h1>
+                <p>Axborot xavfsizligining nazariy asoslari va tamoyillari</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value">15</span>
+                        <span>Jami</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">8</span>
+                        <span>Yakunlangan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">53%</span>
+                        <span>Progress</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-btn active">Barchasi</button>
+                    <button class="filter-btn">Yakunlangan</button>
+                    <button class="filter-btn">Jarayonda</button>
+                    <button class="filter-btn">Boshlanmagan</button>
+                </div>
+                <select class="sort-select">
+                    <option>Standart tartib</option>
+                    <option>Nomi bo'yicha</option>
+                    <option>Davomiylik bo'yicha</option>
+                </select>
+            </div>
+
+            <!-- Lectures Grid -->
+            <div class="content-grid">
+                <!-- Lecture 1 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600" alt="Lecture 1">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #1</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                        <h3>Axborot Xavfsizligiga Kirish</h3>
+                        <p>Axborot xavfsizligining asosiy tushunchalari, maqsadlari va ahamiyati.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 2 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Lecture 2">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #2</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 60 min</span>
+                        </div>
+                        <h3>Kiberhujumlar Turlari</h3>
+                        <p>DDoS, fishing, malware, ransomware va boshqa kiberhujum turlari.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 3 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600" alt="Lecture 3">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #3</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <h3>Parol Xavfsizligi</h3>
+                        <p>Kuchli parollar yaratish, parol menejerlari va 2FA.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 4 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600" alt="Lecture 4">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #4</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 55 min</span>
+                        </div>
+                        <h3>Tarmoq Xavfsizligi Asoslari</h3>
+                        <p>Firewall, VPN, IDS/IPS tizimlari va tarmoq monitoringi.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 5 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Lecture 5">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #5</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 40 min</span>
+                        </div>
+                        <h3>Wi-Fi Xavfsizligi</h3>
+                        <p>Wi-Fi tarmoqlarini himoya qilish va WPA3 standarti.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 6 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600" alt="Lecture 6">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #6</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 70 min</span>
+                        </div>
+                        <h3>Kriptografiya Asoslari</h3>
+                        <p>Simmetrik va asimmetrik shifrlash, hash funksiyalari.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 7 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1620336655055-bd87c5d1d73f?w=600" alt="Lecture 7">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #7</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 65 min</span>
+                        </div>
+                        <h3>SSL/TLS va HTTPS</h3>
+                        <p>Internetda ma'lumotlarni himoya qilish va sertifikatlar.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 8 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=600" alt="Lecture 8">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #8</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <h3>Zararli Dasturlar (Malware)</h3>
+                        <p>Viruslar, troyanlar, ransomware va boshqa zararli dasturlar.</p>
+                        <div class="card-progress">
+                            <span>100%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-eye"></i> Ko'rish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 9 (In Progress) -->
+                <div class="content-card in-progress">
+                    <div class="card-badge in-progress">Jarayonda</div>
+                    <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=600" alt="Lecture 9">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #9</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 60 min</span>
+                        </div>
+                        <h3>Ijtimoiy Muhandislik</h3>
+                        <p>Fishing, pretexting, baiting va ijtimoiy muhandislik hujumlari.</p>
+                        <div class="card-progress">
+                            <span>65%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Davom etish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-bookmark"></i> Saqlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lecture 10 (Not Started) -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600" alt="Lecture 10">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #10</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 55 min</span>
+                        </div>
+                        <h3>Axborot Xavfsizligi Qonuniy Asoslari</h3>
+                        <p>GDPR, HIPAA, PCI-DSS va milliy qonunlar.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with lectures 11-15 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Lecture 11">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #11</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 45 min</span>
+                        </div>
+                        <h3>Ma'lumotlarni Himoya Qilish</h3>
+                        <p>Ma'lumotlarni klassifikatsiya qilish va himoya strategiyalari.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Lecture 12">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #12</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 50 min</span>
+                        </div>
+                        <h3>Bulutli Xavfsizlik</h3>
+                        <p>Cloud security asoslari va eng yaxshi amaliyotlar.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600" alt="Lecture 13">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #13</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 60 min</span>
+                        </div>
+                        <h3>Mobil Qurilmalar Xavfsizligi</h3>
+                        <p>Smartfon va planshetlarni himoya qilish usullari.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600" alt="Lecture 14">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #14</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 55 min</span>
+                        </div>
+                        <h3>IoT Xavfsizligi</h3>
+                        <p>Internet of Things qurilmalarini himoya qilish.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600" alt="Lecture 15">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Ma'ruza #15</span>
+                            <span class="card-duration"><i class="far fa-clock"></i> 65 min</span>
+                        </div>
+                        <h3>Kiberxavfsizlik Strategiyalari</h3>
+                        <p>Korxonalarda kiberxavfsizlik strategiyalari va risklarni boshqarish.</p>
+                        <div class="card-progress">
+                            <span>0%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled>❮ Oldingi</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn">Keyingi ❯</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

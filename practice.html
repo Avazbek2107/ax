@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axborot Xavfsizligi | Amaliyot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-haltered"></i>
+                <span>AXBOROT XAVFSIZLIGI</span>
+            </div>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Amaliy mashg'ulotlarni qidirish...">
+            </div>
+            <div class="nav-user">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="user-name">Foydalanuvchi</span>
+                </div>
+                <a href="dashboard.html" class="nav-btn">
+                    <i class="fas fa-home"></i>
+                </a>
+                <button class="nav-btn logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item">
+                    <i class="fas fa-home"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="lectures.html" class="menu-item">
+                    <i class="fas fa-book"></i>
+                    <span>Ma'ruzalar</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="practice.html" class="menu-item active">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Amaliyot</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="independent.html" class="menu-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mustaqil ta'lim</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="tests.html" class="menu-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Testlar</span>
+                    <span class="badge">10</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header" style="background: linear-gradient(135deg, #10b981, #059669)">
+                <h1><i class="fas fa-laptop-code"></i> Amaliy Mashg'ulotlar</h1>
+                <p>Nazariy bilimlarni amaliy ko'nikmalarga aylantiring</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value">15</span>
+                        <span>Jami</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">5</span>
+                        <span>Yakunlangan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">33%</span>
+                        <span>Progress</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-btn active">Barchasi</button>
+                    <button class="filter-btn">Oson</button>
+                    <button class="filter-btn">O'rtacha</button>
+                    <button class="filter-btn">Qiyin</button>
+                    <button class="filter-btn">Yakunlangan</button>
+                </div>
+                <select class="sort-select">
+                    <option>Standart tartib</option>
+                    <option>Nomi bo'yicha</option>
+                    <option>Qiyinlik bo'yicha</option>
+                    <option>Davomiylik bo'yicha</option>
+                </select>
+            </div>
+
+            <!-- Practice Grid -->
+            <div class="content-grid">
+                <!-- Practice 1 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Practice 1">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #1</span>
+                            <span class="difficulty easy">Oson</span>
+                        </div>
+                        <h3>Parol Menejeridan Foydalanish</h3>
+                        <p>LastPass va Bitwarden parol menejerlarini o'rnatish va sozlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">LastPass</span>
+                            <span class="tool">Bitwarden</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 2 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Practice 2">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #2</span>
+                            <span class="difficulty easy">Oson</span>
+                        </div>
+                        <h3>Ikki Bosqichli Autentifikatsiya</h3>
+                        <p>Google Authenticator va Authy orqali 2FA sozlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Google Auth</span>
+                            <span class="tool">Authy</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 3 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?w=600" alt="Practice 3">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #3</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>Wi-Fi Tarmog'ini Himoyalash</h3>
+                        <p>Router sozlamalari, WPA3 shifrlash va maxfiy parol o'rnatish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Router</span>
+                            <span class="tool">WPA3</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 4 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600" alt="Practice 4">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #4</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>VPN O'rnatish va Sozlash</h3>
+                        <p>OpenVPN va WireGuard yordamida VPN server o'rnatish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">OpenVPN</span>
+                            <span class="tool">WireGuard</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 5 -->
+                <div class="content-card completed">
+                    <div class="card-badge completed">Yakunlangan</div>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600" alt="Practice 5">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #5</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>Antivirus Dasturini Sozlash</h3>
+                        <p>Windows Defender va uchinchi tomon antiviruslarni optimal sozlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Defender</span>
+                            <span class="tool">Kaspersky</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-redo"></i> Takrorlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 6 -->
+                <div class="content-card in-progress">
+                    <div class="card-badge in-progress">Jarayonda</div>
+                    <img src="https://images.unsplash.com/photo-1620336655055-bd87c5d1d73f?w=600" alt="Practice 6">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #6</span>
+                            <span class="difficulty hard">Qiyin</span>
+                        </div>
+                        <h3>Fayllarni Shifrlash (AES)</h3>
+                        <p>VeraCrypt bilan disk bo'limlari va fayllarni shifrlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">VeraCrypt</span>
+                            <span class="tool">AES-256</span>
+                        </div>
+                        <div class="card-progress">
+                            <span>60%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Davom etish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-save"></i> Saqlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 7 -->
+                <div class="content-card in-progress">
+                    <div class="card-badge in-progress">Jarayonda</div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Practice 7">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #7</span>
+                            <span class="difficulty easy">Oson</span>
+                        </div>
+                        <h3>Fishing Email Tahlili</h3>
+                        <p>Haqiqiy va soxta email'larni farqlash mashg'uloti.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Email</span>
+                            <span class="tool">Phishing</span>
+                        </div>
+                        <div class="card-progress">
+                            <span>40%</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Davom etish
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-save"></i> Saqlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 8 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600" alt="Practice 8">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #8</span>
+                            <span class="difficulty hard">Qiyin</span>
+                        </div>
+                        <h3>Nmap bilan Tarmoq Skanerlash</h3>
+                        <p>Portlarni skanerlash va zaifliklarni aniqlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Nmap</span>
+                            <span class="tool">Kali Linux</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 9 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Practice 9">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #9</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>Wireshark bilan Trafik Tahlili</h3>
+                        <p>Tarmoq paketlarini ushlash va tahlil qilish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Wireshark</span>
+                            <span class="tool">TCP/IP</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 10 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Practice 10">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #10</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>Metasploit Framework</h3>
+                        <p>Penetratsion testlash va zaifliklarni ekspluatatsiya qilish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Metasploit</span>
+                            <span class="tool">MSF</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 11 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Practice 11">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #11</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>SQL Injection Testlash</h3>
+                        <p>Web ilovalarda SQL zaifliklarini aniqlash.</p>
+                        <div class="practice-tools">
+                            <span class="tool">SQLMap</span>
+                            <span class="tool">Burp Suite</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 12 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600" alt="Practice 12">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #12</span>
+                            <span class="difficulty hard">Qiyin</span>
+                        </div>
+                        <h3>XSS Hujumlaridan Himoya</h3>
+                        <p>Cross-site scripting zaifliklarini topish va bartaraf etish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">XSS</span>
+                            <span class="tool">OWASP</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 13 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600" alt="Practice 13">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #13</span>
+                            <span class="difficulty hard">Qiyin</span>
+                        </div>
+                        <h3>SSL/TLS Sertifikatlarini Sozlash</h3>
+                        <p>Let's Encrypt bilan HTTPS sozlash va sertifikat o'rnatish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Let's Encrypt</span>
+                            <span class="tool">OpenSSL</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 14 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?w=600" alt="Practice 14">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #14</span>
+                            <span class="difficulty medium">O'rtacha</span>
+                        </div>
+                        <h3>Backup va Ma'lumotlarni Qayta Tiklash</h3>
+                        <p>Muntazam backup va disaster recovery strategiyalari.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Backup</span>
+                            <span class="tool">Recovery</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice 15 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Practice 15">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Amaliyot #15</span>
+                            <span class="difficulty hard">Qiyin</span>
+                        </div>
+                        <h3>SIEM Tizimini Sozlash</h3>
+                        <p>Security Information and Event Management tizimini o'rnatish.</p>
+                        <div class="practice-tools">
+                            <span class="tool">Splunk</span>
+                            <span class="tool">ELK</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-star"></i> Sevimli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled>❮ Oldingi</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                    <span class="page-number">2</span>
+                </div>
+                <button class="page-btn">Keyingi ❯</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

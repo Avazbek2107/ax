@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axborot Xavfsizligi | Testlar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-haltered"></i>
+                <span>AXBOROT XAVFSIZLIGI</span>
+            </div>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Testlarni qidirish...">
+            </div>
+            <div class="nav-user">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="user-name">Foydalanuvchi</span>
+                </div>
+                <a href="dashboard.html" class="nav-btn">
+                    <i class="fas fa-home"></i>
+                </a>
+                <button class="nav-btn logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item">
+                    <i class="fas fa-home"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="lectures.html" class="menu-item">
+                    <i class="fas fa-book"></i>
+                    <span>Ma'ruzalar</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="practice.html" class="menu-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Amaliyot</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="independent.html" class="menu-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mustaqil ta'lim</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="tests.html" class="menu-item active">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Testlar</span>
+                    <span class="badge">10</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Page Header -->
+            <div class="page-header" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed)">
+                <h1><i class="fas fa-question-circle"></i> Testlar</h1>
+                <p>Bilimingizni sinab ko'ring va o'z-o'zini nazorat qiling</p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <span class="stat-value">10</span>
+                        <span>Jami testlar</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2</span>
+                        <span>Yakunlangan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">85%</span>
+                        <span>O'rtacha</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-btn active">Barchasi</button>
+                    <button class="filter-btn">Quiz</button>
+                    <button class="filter-btn">Imtihon</button>
+                    <button class="filter-btn">Amaliy</button>
+                    <button class="filter-btn">Yakunlangan</button>
+                </div>
+                <select class="sort-select">
+                    <option>Standart tartib</option>
+                    <option>Nomi bo'yicha</option>
+                    <option>Savollar soni</option>
+                    <option>Natija bo'yicha</option>
+                </select>
+            </div>
+
+            <!-- Tests Grid -->
+            <div class="content-grid">
+                <!-- Test 1 -->
+                <div class="content-card completed">
+                    <div class="score-badge">85%</div>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600" alt="Test 1">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #1</span>
+                            <span class="test-type quiz">Quiz</span>
+                        </div>
+                        <h3>AX Asosiy Tushunchalari</h3>
+                        <p>10 ta savol • 15 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-check-circle"></i> 85% (8/10)</span>
+                            <span><i class="far fa-calendar"></i> 15.10.2023</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-chart-bar"></i> Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-redo"></i> Qayta topshirish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 2 -->
+                <div class="content-card completed">
+                    <div class="score-badge">92%</div>
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600" alt="Test 2">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #2</span>
+                            <span class="test-type exam">Imtihon</span>
+                        </div>
+                        <h3>Tarmoq Xavfsizligi</h3>
+                        <p>15 ta savol • 25 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-check-circle"></i> 92% (14/15)</span>
+                            <span><i class="far fa-calendar"></i> 20.10.2023</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-chart-bar"></i> Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-redo"></i> Qayta topshirish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 3 -->
+                <div class="content-card in-progress">
+                    <div class="score-badge">65%</div>
+                    <img src="https://images.unsplash.com/photo-1620336655055-bd87c5d1d73f?w=600" alt="Test 3">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #3</span>
+                            <span class="test-type exam">Imtihon</span>
+                        </div>
+                        <h3>Kriptografiya Asoslari</h3>
+                        <p>20 ta savol • 35 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-spinner"></i> Jarayonda</span>
+                            <span><i class="fas fa-hourglass-half"></i> 65% yakunlangan</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-chart-bar"></i> Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Davom etish
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 4 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=600" alt="Test 4">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #4</span>
+                            <span class="test-type practice">Amaliy</span>
+                        </div>
+                        <h3>Zararli Dasturlar</h3>
+                        <p>12 ta savol • 20 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> O'rtacha</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 5 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600" alt="Test 5">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #5</span>
+                            <span class="test-type exam">Imtihon</span>
+                        </div>
+                        <h3>AX Qonuniy Asoslari</h3>
+                        <p>18 ta savol • 30 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> Qiyin</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 6 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="Test 6">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #6</span>
+                            <span class="test-type quiz">Quiz</span>
+                        </div>
+                        <h3>Parol Xavfsizligi</h3>
+                        <p>10 ta savol • 15 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> Oson</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 7 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Test 7">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #7</span>
+                            <span class="test-type practice">Amaliy</span>
+                        </div>
+                        <h3>Wi-Fi Xavfsizligi</h3>
+                        <p>12 ta savol • 20 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> O'rtacha</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 8 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=600" alt="Test 8">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #8</span>
+                            <span class="test-type exam">Imtihon</span>
+                        </div>
+                        <h3>Bulutli Xavfsizlik</h3>
+                        <p>15 ta savol • 25 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> Qiyin</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 9 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600" alt="Test 9">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #9</span>
+                            <span class="test-type quiz">Quiz</span>
+                        </div>
+                        <h3>Mobil Xavfsizlik</h3>
+                        <p>10 ta savol • 15 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Boshlanmagan</span>
+                            <span><i class="fas fa-tag"></i> O'rtacha</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-play"></i> Boshlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test 10 -->
+                <div class="content-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600" alt="Test 10">
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="card-number">Test #10</span>
+                            <span class="test-type exam">Imtihon</span>
+                        </div>
+                        <h3>Yakuniy Imtihon</h3>
+                        <p>30 ta savol • 60 daqiqa</p>
+                        <div class="test-details">
+                            <span><i class="fas fa-flag"></i> Kutilmoqda</span>
+                            <span><i class="fas fa-calendar"></i> 15.12.2023</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm" disabled>
+                                Natijalar
+                            </button>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="far fa-calendar-alt"></i> Kuni belgilash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn" disabled>❮ Oldingi</button>
+                <div class="page-numbers">
+                    <span class="page-number active">1</span>
+                </div>
+                <button class="page-btn" disabled>Keyingi ❯</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

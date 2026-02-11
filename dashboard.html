@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axborot Xavfsizligi | Asosiy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-haltered"></i>
+                <span>AXBOROT XAVFSIZLIGI</span>
+            </div>
+            
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Ma'ruzalar, amaliyotlar, testlar...">
+            </div>
+            
+            <div class="nav-user">
+                <div class="user-info" id="userInfo">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <span class="user-name" id="userName">Foydalanuvchi</span>
+                        <span class="user-role" id="userRole">Talaba</span>
+                    </div>
+                </div>
+                <button class="nav-btn notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <button class="nav-btn logout-btn" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Main -->
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="menu-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="lectures.html" class="menu-item">
+                    <i class="fas fa-book"></i>
+                    <span>Ma'ruzalar</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="practice.html" class="menu-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Amaliyot</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="independent.html" class="menu-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Mustaqil ta'lim</span>
+                    <span class="badge">15</span>
+                </a>
+                <a href="tests.html" class="menu-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Testlar</span>
+                    <span class="badge">10</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Natijalarim</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Sozlamalar</span>
+                </a>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="user-progress">
+                    <span>Umumiy progress</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 45%"></div>
+                    </div>
+                    <span class="progress-text">45%</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Section -->
+            <div class="welcome-card">
+                <div class="welcome-text">
+                    <h1>Xush kelibsiz, <span id="welcomeName">Foydalanuvchi</span>! 👋</h1>
+                    <p>Axborot xavfsizligi bo'yicha bilimlaringizni oshirishni davom eting</p>
+                    <button class="btn btn-primary" id="continueBtn">
+                        <i class="fas fa-play"></i>
+                        Davom etish
+                    </button>
+                </div>
+                <div class="welcome-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">8/15</span>
+                        <span class="stat-label">Ma'ruzalar</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">5/15</span>
+                        <span class="stat-label">Amaliyot</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">3/15</span>
+                        <span class="stat-label">Mustaqil</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">2/10</span>
+                        <span class="stat-label">Testlar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div class="carousel-section">
+                <h2>So'nggi yangiliklar</h2>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200" alt="Kiberxavfsizlik">
+                            <div class="slide-content">
+                                <span class="tag">Yangi</span>
+                                <h3>Kiberxavfsizlik asoslari</h3>
+                                <p>Parol xavfsizligi va 2FA haqida batafsil</p>
+                                <button class="btn btn-sm btn-outline">Ko'rish</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <h3>Amaliy mashg'ulot</h3>
+                                <p>Firewall sozlamalari</p>
+                                <button class="btn btn-sm btn-primary">Tomosha qilish</button>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200" alt="Tarmoq xavfsizligi">
+                            <div class="slide-content">
+                                <span class="tag">Trend</span>
+                                <h3>Tarmoq xavfsizligi</h3>
+                                <p>VPN va IDS/IPS tizimlari</p>
+                                <button class="btn btn-sm btn-outline">Ko'rish</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sections Grid -->
+            <div class="sections-grid">
+                <!-- Ma'ruzalar -->
+                <div class="section-card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #667eea, #764ba2)">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ma'ruzalar</h3>
+                        <p>15 ta mavzu</p>
+                        <div class="progress-info">
+                            <span>8/15 yakunlangan</span>
+                            <span>53%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 53%"></div>
+                        </div>
+                        <a href="lectures.html" class="btn btn-outline btn-block">
+                            Davom etish <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Amaliyot -->
+                <div class="section-card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #10b981, #059669)">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Amaliyot</h3>
+                        <p>15 ta mashg'ulot</p>
+                        <div class="progress-info">
+                            <span>5/15 yakunlangan</span>
+                            <span>33%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%"></div>
+                        </div>
+                        <a href="practice.html" class="btn btn-outline btn-block">
+                            Boshlash <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mustaqil ta'lim -->
+                <div class="section-card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #f59e0b, #d97706)">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mustaqil ta'lim</h3>
+                        <p>15 ta resurs</p>
+                        <div class="progress-info">
+                            <span>3/15 yakunlangan</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%"></div>
+                        </div>
+                        <a href="independent.html" class="btn btn-outline btn-block">
+                            O'rganish <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testlar -->
+                <div class="section-card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed)">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="card-body">
+                        <h3>Testlar</h3>
+                        <p>10 ta test</p>
+                        <div class="progress-info">
+                            <span>2/10 yakunlangan</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 20%"></div>
+                        </div>
+                        <a href="tests.html" class="btn btn-outline btn-block">
+                            Test topshirish <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="recent-activity">
+                <h2>So'nggi faoliyat</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon completed">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Ma'ruza #7: Kriptografiya asoslari</h4>
+                            <span>2 kun oldin</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon progress">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Amaliyot #5: Parol menejeri</h4>
+                            <span>1 kun oldin</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon test">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="activity-details">
+                            <h4>Test: Tarmoq xavfsizligi</h4>
+                            <span>Natija: 85% • 3 kun oldin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
